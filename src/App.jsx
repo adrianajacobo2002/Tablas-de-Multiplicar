@@ -8,6 +8,7 @@ import {
 import Landing from "./pages/Landing";
 import Tablas from "./pages/Tablas"
 import Ejercicio from './pages/Ejercicios';
+import Resumen from './pages/Resumen';
 
 import { CssBaseline } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
@@ -15,13 +16,10 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 // Define el tema con las fuentes
 const theme = createTheme({
   typography: {
-    fontFamily: "Schoolbell",
-    h1: { fontFamily: "Schoolbell, serif" },
-    h2: { fontFamily: "Schoolbell, serif" },
-    h3: { fontFamily: "Righteous, cursive" },
-    h4: { fontFamily: "Righteous, cursive" },
-    h5: { fontFamily: "Righteous, cursive" },
-    h6: { fontFamily: "Righteous, cursive" },
+    fontFamily: "Gamja Flower, serif",
+    h1: { fontFamily: "Rubik Puddles, serif" },
+    h2: { fontFamily: "Rubik Puddles, serif" },
+    
   },
   palette: {
     background: {
@@ -42,6 +40,8 @@ function App() {
           <Route path="/" element={<Landing />} />
           <Route path="/tablas" element={<Tablas />} />
           <Route path="/ejercicio" element={<Ejercicio />} />
+          <Route path="/resumen" element={<Resumen />} />
+
         </Routes>
       </Router>
     </ThemeProvider>

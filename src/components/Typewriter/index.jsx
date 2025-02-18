@@ -2,7 +2,7 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 const TypewriterText = () => {
   const [text] = useTypewriter({
-    words: ["Aprende a multiplicar", "Diversión mientras aprendes"],
+    words: ["Aprende a multiplicar", "Diviertete mientras aprendes"],
     loop: 0, // 0 = loop infinito
     delaySpeed: 2000, // Tiempo de espera antes de cambiar de palabra
     typeSpeed: 70, // Velocidad de escritura
